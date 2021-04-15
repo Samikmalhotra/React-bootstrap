@@ -1,0 +1,7 @@
+.navmain {
+	background-color: red;
+}
+body {
+	background-color: aqua !important;
+	min-height: 200vh;
+}
