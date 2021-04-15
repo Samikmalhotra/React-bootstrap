@@ -1,7 +1,23 @@
-.navmain {
-	background-color: red;
+.navbar {
+	color: blue;
 }
 body {
-	background-color: aqua !important;
 	min-height: 200vh;
+}
+.navbar .navbar-brand {
+	font-size: 2rem;
+}
+.nav-link {
+	font-size: 1.4rem;
+	margin: 0 1%;
+}
+.red {
+	background-color: red;
+	border: 1px solid black;
+}
+.try {
+	margin-top: 30vh;
+}
+.container {
+	margin: 0;
 }

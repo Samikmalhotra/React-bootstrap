@@ -3,27 +3,27 @@ import { Navbar, Nav, NavDropdown} from 'react-bootstrap'
 import '../App.css';
 
 const Navbars = () => {
-    const [isActive, setActive] = useState("false");
+    // const [isActive, setActive] = useState("false");
 
-    const myRef= React.useRef(null);
+    // const myRef= React.useRef(null);
     
-    const handleScroll = () =>{
-        // if($(.nav).scrollTop>0){
-        //     setActive(!isActive);
-        // }
-        if(myRef.scrollTop>0){
-            setActive(true)
-        }else{
-            setActive(false)
-        }
-    }
+    // const handleScroll = () =>{
+    //     // if($(.nav).scrollTop>0){
+    //     //     setActive(!isActive);
+    //     // }
+    //     if(myRef.scrollTop>0){
+    //         setActive(true)
+    //     }else{
+    //         setActive(false)
+    //     }
+    // }
 
-    React.useEffect(()=>{
-        window.addEventListener('scroll', handleScroll);
-    },[])
+    // React.useEffect(()=>{
+    //     window.addEventListener('scroll', handleScroll);
+    // },[])
 
     return (
-        <Navbar className = {!isActive?"navmain":null} fixed="top" collapseOnSelect expand="lg" variant="light" ref={myRef}>
+        <Navbar  fixed="top" collapseOnSelect expand="lg" variant="light">
   <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
@@ -37,12 +37,6 @@ const Navbars = () => {
         <NavDropdown.Divider />
         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
       </NavDropdown>
-    </Nav>
-    <Nav>
-      <Nav.Link href="#deets">More deets</Nav.Link>
-      <Nav.Link eventKey={2} href="#memes">
-        Dank memes
-      </Nav.Link>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
